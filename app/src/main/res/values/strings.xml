@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">YaraTestApp</string>
+    <string name="dialog_ok">ok</string>
+    <string name="cantPlayVideo">امکان پخش این آیتم وجود ندارد.\n تنظیمات اینترنت خود را چک کنید.</string>
+    <string name="somethingWrong">خطای ارتباط با سرور!!\nلطفا اینترنت دستگاه خود را جهت بروز رسانی اطلاعات روشن کنید.</string>
+    <string name="exit_twice_click">جهت خروج از برنامه دوباره کلیک کنید.</string>
+</resources>

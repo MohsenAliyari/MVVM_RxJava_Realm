@@ -1,0 +1,53 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/iransansmobile_medium</item>
+    </style>
+    <style name="AppThemeNoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/iransansmobile_medium</item>
+    </style>
+    <style name="SplashThem" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="iranSansMedium_gray">
+        <item name="android:fontFamily">@font/iransansmobile_medium</item>
+        <item name="android:textColor">@color/textGrayColor</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:padding">@dimen/margin2</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="iranSansMedium_Black">
+        <item name="android:fontFamily">@font/iransansmobile_medium</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:padding">@dimen/margin2</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="constraintLayoutStyle">
+        <item name="android:paddingLeft">@dimen/margin5</item>
+        <item name="android:paddingRight">@dimen/margin5</item>
+        <item name="android:paddingTop">@dimen/margin15</item>
+        <item name="android:layout_marginTop">@dimen/margin15</item>
+        <item name="android:paddingBottom">@dimen/margin15</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:elevation">@dimen/margin2</item>
+    </style>
+
+</resources>

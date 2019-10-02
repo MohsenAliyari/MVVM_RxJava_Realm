@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:bind="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+                name="item"
+                type="com.example.mvvm_rxjava_realm.activities.baseActivity.viewModel.MovieViewModel"/>
+
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bgMain"
+            tools:context=".activities.baseActivity.view.BaseActivity">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+                bind:recyclerMovies="@{item.modelArrayList}"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:visibility="@{item.gonUnless}"
+                android:layout_width="match_parent"
+                android:background="@color/whiteTransparen50"
+                android:layout_height="match_parent">
+
+            <ProgressBar
+                    android:id="@+id/progressbar"
+                    android:layout_width="@dimen/margin100"
+                    android:layout_height="@dimen/margin100"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:indeterminateTint="@color/colorPrimary"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+            <ImageView
+                    android:layout_width="@dimen/margin70"
+                    android:layout_height="@dimen/margin30"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/bat_signal"
+                    android:layout_centerInParent="true"
+                    android:backgroundTint="@color/colorPrimary"
+                    app:layout_constraintEnd_toEndOf="@+id/progressbar"
+                    app:layout_constraintBottom_toBottomOf="@+id/progressbar"
+                    app:layout_constraintTop_toTopOf="@+id/progressbar"
+                    app:layout_constraintStart_toStartOf="@+id/progressbar"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
